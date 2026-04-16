@@ -1,0 +1,14 @@
+@API_Host = http://localhost:5196
+
+### Login
+POST {{API_Host}}/api/Auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@correo.com",
+  "password": "149522"
+}
+
+### Clientes con token
+GET {{MiApi_Host}}/api/Clientes
+Authorization: Bearer PEGA_AQUI_EL_TOKEN
